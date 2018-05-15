@@ -1,13 +1,14 @@
 package org.brumhilda.restendpoint;
 
 import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
 
 @Path("/restaurant")
 public class ParserService {
 
 
     @GET
-    @Produces("application/json")
+    @Produces(MediaType.APPLICATION_JSON + "; charset=UTF-8")
     @Path("/ChIJD55B_ASUEkcRgoFJeL_VJjE")
     public String getPurkynka() {
         return
@@ -35,7 +36,7 @@ public class ParserService {
     }
 
     @GET
-    @Produces("application/json")
+    @Produces(MediaType.APPLICATION_JSON + "; charset=UTF-8")
     @Path("/ChIJ3VMlLwWUEkcRiEOim7E_5ks")
     public String getLiquidBread() {
         return
@@ -60,7 +61,7 @@ public class ParserService {
     }
 
     @GET
-    @Produces("application/json")
+    @Produces(MediaType.APPLICATION_JSON + "; charset=UTF-8")
     @Path("/ChIJP33V6QiUEkcRmVpGToDUnRI")
     public String getRestaurant2() {
         return
@@ -86,7 +87,7 @@ public class ParserService {
     }
 
     @GET
-    @Produces("application/json")
+    @Produces(MediaType.APPLICATION_JSON + "; charset=UTF-8")
     @Path("/ChIJlWwu9guUEkcRRpTpuTBDrrY")
     public String getRestaurant1() {
         return
@@ -113,7 +114,7 @@ public class ParserService {
     }
 
     @GET
-    @Produces("application/json")
+    @Produces(MediaType.APPLICATION_JSON + "; charset=UTF-8")
     @Path("/ChIJw62LVgWUEkcRda0Iev1tBSE")
     public String getIndia() {
         return
@@ -137,19 +138,4 @@ public class ParserService {
                         "    ]\n" +
                         "}";
     }
-
-//    @GET
-//    @Produces("application/json")
-//    @Path("/ChIJ3VMlLwWUEkcRiEOim7E_5ks")
-//    public List<Parser> getAllParsers() {
-//        return parserStore.getAllParsers();
-//    }
-//
-//    @POST
-//    @Consumes("application/json")
-//    @Produces("application/json")
-//    public Parser createParser(Parser parser) {
-//        parserStore.addParser(parser);
-//        return parser;
-//    }
 }
