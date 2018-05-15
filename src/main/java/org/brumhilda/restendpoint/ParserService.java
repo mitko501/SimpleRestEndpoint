@@ -13,25 +13,178 @@ public class ParserService {
     public String getPurkynka() {
         return
                 "{\n" +
-                        "    \"soupIncludedInPrice\":true,\n" +
-                        "    \"menuForDays\": [\n" +
+                        "  \"soupIncludedInPrice\": true,\n" +
+                        "  \"weekNumber\": 20,\n" +
+                        "  \"menuForDays\": [\n" +
                         "    {\n" +
-                        "        \"menu\":\n" +
-                        "        [\n" +
-                        "            {\"name\":\"Pikantní masová směs, bramboráčky\",\"price\":99,\"tags\":[\"kuracina\",\"bravcovina\",\"hovadzina\",\"zemiaky\"]},\n" +
-                        "            {\"name\":\"Grilovaný losos, fettuccine s bazalkovým pestem\",\"price\":119,\"tags\":[\"ryba\",\"cestovina\"]},\n" +
-                        "            {\"name\":\"Lívanečky s lesním ovocem, přelité vanilkovým krémem\",\"price\":92,\"tags\":[\"sladke\"]},\n" +
-                        "            {\"name\":\"Roastbeef, opečené brambory, celerová remuláda\",\"price\":139,\"tags\":[\"hovadzina\",\"zemiaky\"]}\n" +
-                        "        ],\n" +
-                        "        \"soup\":\n" +
-                        "        [\n" +
-                        "            {\"name\":\"Polévka: Hovězí vývar s kapáním\"}\n" +
-                        "        ],\n" +
-                        "        \"date\": \"2018-05-01T00:00:00.000Z\"\n" +
+                        "      \"menu\": [\n" +
+                        "        {\n" +
+                        "          \"name\": \"Pikantní masová směs, bramboráčky\",\n" +
+                        "          \"price\": 99,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"kuracina\",\n" +
+                        "            \"bravcovina\",\n" +
+                        "            \"hovadzina\",\n" +
+                        "            \"zemiaky\"\n" +
+                        "          ]\n" +
+                        "        },\n" +
+                        "        {\n" +
+                        "          \"name\": \"Grilovaný losos, fettuccine s bazalkovým pestem\",\n" +
+                        "          \"price\": 119,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"ryba\",\n" +
+                        "            \"cestovina\"\n" +
+                        "          ]\n" +
+                        "        },\n" +
+                        "        {\n" +
+                        "          \"name\": \"Lívanečky s lesním ovocem, přelité vanilkovým krémem\",\n" +
+                        "          \"price\": 92,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"sladke\"\n" +
+                        "          ]\n" +
+                        "        },\n" +
+                        "        {\n" +
+                        "          \"name\": \"Roastbeef, opečené brambory, celerová remuláda\",\n" +
+                        "          \"price\": 139,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"hovadzina\",\n" +
+                        "            \"zemiaky\"\n" +
+                        "          ]\n" +
+                        "        }\n" +
+                        "      ],\n" +
+                        "      \"soup\": [\n" +
+                        "        {\n" +
+                        "          \"name\": \"Polévka: Hovězí vývar s kapáním\"\n" +
+                        "        }\n" +
+                        "      ]\n" +
+                        "    },\n" +
+                        "    {\n" +
+                        "      \"menu\": [\n" +
+                        "        {\n" +
+                        "          \"name\": \"Utorok obed1\",\n" +
+                        "          \"price\": 99,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"kuracina\",\n" +
+                        "            \"bravcovina\",\n" +
+                        "            \"hovadzina\",\n" +
+                        "            \"zemiaky\"\n" +
+                        "          ]\n" +
+                        "        },\n" +
+                        "        {\n" +
+                        "          \"name\": \"Utorok obed2\",\n" +
+                        "          \"price\": 119,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"ryba\",\n" +
+                        "            \"cestovina\"\n" +
+                        "          ]\n" +
+                        "        },\n" +
+                        "        {\n" +
+                        "          \"name\": \"Utorok obed3\",\n" +
+                        "          \"price\": 92,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"sladke\"\n" +
+                        "          ]\n" +
+                        "        },\n" +
+                        "        {\n" +
+                        "          \"name\": \"Utorok obed4\",\n" +
+                        "          \"price\": 139,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"hovadzina\",\n" +
+                        "            \"zemiaky\"\n" +
+                        "          ]\n" +
+                        "        }\n" +
+                        "      ],\n" +
+                        "      \"soup\": [\n" +
+                        "        {\n" +
+                        "          \"name\": \"Polévka Utorok: Hovězí vývar s kapáním\"\n" +
+                        "        }\n" +
+                        "      ]\n" +
+                        "    },null,\n" +
+                        "    {\n" +
+                        "      \"menu\": [\n" +
+                        "        {\n" +
+                        "          \"name\": \"Stvrtok obed1\",\n" +
+                        "          \"price\": 99,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"kuracina\",\n" +
+                        "            \"bravcovina\",\n" +
+                        "            \"hovadzina\",\n" +
+                        "            \"zemiaky\"\n" +
+                        "          ]\n" +
+                        "        },\n" +
+                        "        {\n" +
+                        "          \"name\": \"Stvrtok obed2\",\n" +
+                        "          \"price\": 119,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"ryba\",\n" +
+                        "            \"cestovina\"\n" +
+                        "          ]\n" +
+                        "        },\n" +
+                        "        {\n" +
+                        "          \"name\": \"Stvrtok obed3\",\n" +
+                        "          \"price\": 92,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"sladke\"\n" +
+                        "          ]\n" +
+                        "        },\n" +
+                        "        {\n" +
+                        "          \"name\": \"Stvrtok obed4\",\n" +
+                        "          \"price\": 139,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"hovadzina\",\n" +
+                        "            \"zemiaky\"\n" +
+                        "          ]\n" +
+                        "        }\n" +
+                        "      ],\n" +
+                        "      \"soup\": [\n" +
+                        "        {\n" +
+                        "          \"name\": \"Polévka stvrtok: Hovězí vývar s kapáním\"\n" +
+                        "        }\n" +
+                        "      ]\n" +
+                        "    },\n" +
+                        "    {\n" +
+                        "      \"menu\": [\n" +
+                        "        {\n" +
+                        "          \"name\": \"piatok obed1\",\n" +
+                        "          \"price\": 99,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"kuracina\",\n" +
+                        "            \"bravcovina\",\n" +
+                        "            \"hovadzina\",\n" +
+                        "            \"zemiaky\"\n" +
+                        "          ]\n" +
+                        "        },\n" +
+                        "        {\n" +
+                        "          \"name\": \"piatok obed2\",\n" +
+                        "          \"price\": 119,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"ryba\",\n" +
+                        "            \"cestovina\"\n" +
+                        "          ]\n" +
+                        "        },\n" +
+                        "        {\n" +
+                        "          \"name\": \"piatok obed3\",\n" +
+                        "          \"price\": 92,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"sladke\"\n" +
+                        "          ]\n" +
+                        "        },\n" +
+                        "        {\n" +
+                        "          \"name\": \"piatok obed4\",\n" +
+                        "          \"price\": 139,\n" +
+                        "          \"tags\": [\n" +
+                        "            \"hovadzina\",\n" +
+                        "            \"zemiaky\"\n" +
+                        "          ]\n" +
+                        "        }\n" +
+                        "      ],\n" +
+                        "      \"soup\": [\n" +
+                        "        {\n" +
+                        "          \"name\": \"Polévka piatok: Hovězí vývar s kapáním\"\n" +
+                        "        }\n" +
+                        "      ]\n" +
                         "    }\n" +
-                        "    \n" +
-                        "    \n" +
-                        "    ]\n" +
+                        "  ]\n" +
                         "}";
     }
 
@@ -42,6 +195,7 @@ public class ParserService {
         return
                 "{\n" +
                         "    \"soupIncludedInPrice\":true,\n" +
+                        "  \"weekNumber\": 20,\n" +
                         "    \"menuForDays\": [\n" +
                         "    {\n" +
                         "        \"menu\":\n" +
@@ -53,8 +207,7 @@ public class ParserService {
                         "        \"soup\":\n" +
                         "        [\n" +
                         "            {\"name\":\"POLÉVKA: GULÁŠOVÁ\"}\n" +
-                        "        ],\n" +
-                        "        \"date\": \"2018-05-07T00:00:00.000Z\"\n" +
+                        "        ]\n" +
                         "    }\n" +
                         "    ]\n" +
                         "}";
@@ -67,6 +220,7 @@ public class ParserService {
         return
                 "{\n" +
                         "    \"soupIncludedInPrice\":true,\n" +
+                        "  \"weekNumber\": 20,\n" +
                         "    \"menuForDays\": [\n" +
                         "    {\n" +
                         "        \"menu\":\n" +
@@ -93,6 +247,7 @@ public class ParserService {
         return
                 "{\n" +
                         "    \"soupIncludedInPrice\":true,\n" +
+                        "  \"weekNumber\": 20,\n" +
                         "    \"menuForDays\": [\n" +
                         "    {\n" +
                         "        \"menu\":\n" +
@@ -120,6 +275,7 @@ public class ParserService {
         return
                 "{\n" +
                         "    \"soupIncludedInPrice\":false,\n" +
+                        "  \"weekNumber\": 20,\n" +
                         "    \"menuForDays\": [\n" +
                         "    {\n" +
                         "        \"menu\":\n" +
