@@ -2,9 +2,17 @@ package org.brumhilda.restendpoint;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.util.Calendar;
 
 @Path("/restaurant")
 public class ParserService {
+
+    private static String week;
+
+    static {
+        Calendar cal = Calendar.getInstance();
+        week = String.valueOf(cal.get(Calendar.WEEK_OF_YEAR));
+    }
 
 
     @GET
@@ -14,7 +22,7 @@ public class ParserService {
         return
                 "{\n" +
                         "  \"soupIncludedInPrice\": true,\n" +
-                        "  \"weekNumber\": 20,\n" +
+                        "  \"weekNumber\": " + week + ",\n" +
                         "  \"menuForDays\": [\n" +
                         "    {\n" +
                         "      \"menu\": [\n" +
@@ -195,7 +203,7 @@ public class ParserService {
         return
                 "{\n" +
                         "    \"soupIncludedInPrice\":true,\n" +
-                        "  \"weekNumber\": 20,\n" +
+                        "  \"weekNumber\": " + week + ",\n" +
                         "    \"menuForDays\": [\n" +
                         "    {\n" +
                         "        \"menu\":\n" +
@@ -220,7 +228,7 @@ public class ParserService {
         return
                 "{\n" +
                         "    \"soupIncludedInPrice\":true,\n" +
-                        "  \"weekNumber\": 20,\n" +
+                        "  \"weekNumber\": " + week + ",\n" +
                         "    \"menuForDays\": [\n" +
                         "    {\n" +
                         "        \"menu\":\n" +
@@ -234,7 +242,7 @@ public class ParserService {
                         "        [\n" +
                         "            {\"name\":\"Kuřecí vývar se zeleninou a fritátovými nudlemi)\"}\n" +
                         "        ],\n" +
-                        "        \"date\": \"2017-11-03T00:00:00.000Z\"\n" +
+                        "        \"date\": \"" + week + "17-11-03T00:00:00.000Z\"\n" +
                         "    }\n" +
                         "    ]\n" +
                         "}";
@@ -247,7 +255,7 @@ public class ParserService {
         return
                 "{\n" +
                         "    \"soupIncludedInPrice\":true,\n" +
-                        "  \"weekNumber\": 20,\n" +
+                        "  \"weekNumber\": " + week + ",\n" +
                         "    \"menuForDays\": [\n" +
                         "    {\n" +
                         "        \"menu\":\n" +
@@ -262,7 +270,7 @@ public class ParserService {
                         "        [\n" +
                         "            {\"name\":\"Hrstková\"}\n" +
                         "        ],\n" +
-                        "        \"date\": \"2017-11-03T00:00:00.000Z\"\n" +
+                        "        \"date\": \"" + week + "17-11-03T00:00:00.000Z\"\n" +
                         "    }\n" +
                         "    ]\n" +
                         "}";
@@ -275,7 +283,7 @@ public class ParserService {
         return
                 "{\n" +
                         "    \"soupIncludedInPrice\":false,\n" +
-                        "  \"weekNumber\": 20,\n" +
+                        "  \"weekNumber\": " + week + ",\n" +
                         "    \"menuForDays\": [\n" +
                         "    {\n" +
                         "        \"menu\":\n" +
@@ -289,7 +297,7 @@ public class ParserService {
                         "        [\n" +
                         "            {\"name\":\"Tomato soup (rajčatová polévka)\",\"price\":22}\n" +
                         "        ],\n" +
-                        "        \"date\": \"2018-05-07T00:00:00.000Z\"\n" +
+                        "        \"date\": \"" + week + "18-05-07T00:00:00.000Z\"\n" +
                         "    }\n" +
                         "    ]\n" +
                         "}";
